@@ -58,7 +58,7 @@ export default function MapArea() {
     const img = new Image();
     img.crossOrigin = 'anonymous';
     img.onload = () => { ctx.drawImage(img,0,0,IMG_W,IMG_H); ctxRef.current=ctx; };
-    img.src = '/africa-geology-map.png';
+    img.src = `${import.meta.env.BASE_URL}africa-geology-map.png`;
   }, []);
 
   // ── Geology hover ─────────────────────────────────────────────────────────
@@ -125,7 +125,7 @@ export default function MapArea() {
       >
         {/* Base map image */}
         <img
-          src="/africa-geology-map.png"
+          src={`${import.meta.env.BASE_URL}africa-geology-map.png`}
           alt="Africa Geology Map"
           style={{ display:'block', width:'100%', height:'auto', userSelect:'none' }}
           draggable={false}

@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+
+body {
+  background: #ede9e0;
+  font-family: Georgia, 'Times New Roman', serif;
+}
+
+img { -webkit-user-drag: none; user-select: none; }
+
+/* Subtle scrollbar in legend panel */
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #c0b8a8; border-radius: 3px; }
